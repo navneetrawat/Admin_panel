@@ -1,8 +1,9 @@
-import Navbar from "./Components/Navbar"
+import Slidebar from './Components/Slidebar/Slidebar';
+
 function App() {
   return (
     <>
-      <Navbar/>
+      <Slidebar />
     </>
   )
 }

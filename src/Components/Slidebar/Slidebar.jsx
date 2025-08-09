@@ -19,35 +19,27 @@ export default function Slidebar() {
                     <h3 className='admin-title'>Mantis</h3>
                 </section>
                 <section className="slide-tabs">
-                    <div className='tab-button'>
-                        <h5 className='heading'>Navigation</h5>
-                        <ul className='ul-slide'>
-                            <li className='list-button'><a><MdDashboard />Dashboard</a></li>
-                        </ul>
-                    </div>
-                    <div className='tab-button'>
-                        <h5 className='heading'>Authentication</h5>
-                        <ul className='ul-slide'>
-                            <li className='list-button'><a href='#'><AiOutlineLogin />Login</a></li>
-                            <li className='list-button'><a href='#'><PiCashRegisterThin />Register</a></li>
-                        </ul>
-                    </div>
-                    <div className='tab-button'>
-                        <h5 className='heading'>Utilities</h5>
-                        <ul className='ul-slide'>
-                            <li className='list-button'><a href='#'><TbTypography />Typography</a></li>
-                            <li className='list-button'><a href='#'><IoMdColorFill />Color</a></li>
-                            <li className='list-button'><a href='#'><BsShadows />Shadow</a></li>
-                            <li className='list-button'><a href='#'><SiContributorcovenant />Ant Icons</a></li>
-                        </ul>
-                    </div>
-                    <div className='tab-button'>
-                        <h5 className='heading'>Support</h5>
-                        <ul className='ul-slide'>
-                            <li className='list-button'><a href='#'><TbBrandPagekit />Sample Page</a></li>
-                            <li className='list-button'><a href='#'><IoIosDocument />Documentation</a></li>
-                        </ul>
-                    </div>
+                    <h5 className='heading'>Navigation</h5>
+                    <ul className='ul-slide'>
+                        <li><a href='#'><MdDashboard />Dashboard</a></li>
+                    </ul>
+                    <h5 className='heading'>Authentication</h5>
+                    <ul className='ul-slide'>
+                        <li><a href='#'><AiOutlineLogin />Login</a></li>
+                        <li><a href='#'><PiCashRegisterThin />Register</a></li>
+                    </ul>
+                    <h5 className='heading'>Utilities</h5>
+                    <ul className='ul-slide'>
+                        <li><a href='#'><TbTypography />Typography</a></li>
+                        <li><a href='#'><IoMdColorFill />Color</a></li>
+                        <li><a href='#'><BsShadows />Shadow</a></li>
+                        <li><a href='#'><SiContributorcovenant />Ant Icons</a></li>
+                    </ul>
+                    <h5 className='heading'>Support</h5>
+                    <ul className='ul-slide'>
+                        <li><a href='#'><TbBrandPagekit />Sample Page</a></li>
+                        <li><a href='#'><IoIosDocument />Documentation</a></li>
+                    </ul>
                 </section>
             </nav>
         </>

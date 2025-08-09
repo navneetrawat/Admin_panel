@@ -1,0 +1,110 @@
+/* Sidebar.css */
+
+.sidebar {
+  background-color: white;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  height: 100vh;
+  border-right: 1px solid #e5e7eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 80;
+}
+
+.sidebar.open {
+  width: 240px;
+}
+
+.sidebar.collapsed {
+  width: 64px;
+}
+
+.sidebar.collapsed:hover {
+  width: 240px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  color: #2563eb; /* blue-600 */
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.1rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .logo-text {
+  opacity: 0;
+}
+
+.sidebar.collapsed:hover .logo-text {
+  opacity: 1;
+}
+
+.sidebar-menu {
+  margin-top: 1rem;
+}
+
+.menu-section {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 0.75rem;
+  color: #9ca3af; /* gray-400 */
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .section-title {
+  opacity: 0;
+}
+
+.sidebar.collapsed:hover .section-title {
+  opacity: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.5rem 1rem;
+  color: #374151; /* gray-700 */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.menu-item:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.menu-item .icon {
+  font-size: 1.1rem;
+}
+
+.label {
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .label {
+  opacity: 0;
+}
+
+.sidebar.collapsed:hover .label {
+  opacity: 1;
+}

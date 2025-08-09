@@ -1,11 +1,27 @@
-import Slidebar from './Components/Slidebar/Slidebar';
+import React, { useState } from "react";
+import Navbar from "./Components/Navbar/Navbar";
 
-function App() {
+import Sidebar from "./Components/SideBar/SideBar";
+import "./App.css"; // Import the CSS
+
+export default function App() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
   return (
-    <>
-      <Slidebar />
-    </>
-  )
-}
+    <div className="app-container">
+      <Sidebar
+        isOpen={isSidebarOpen}
+        toggleSidebar={() => setSidebarOpen(!isSidebarOpen)}
+      />
 
-export default App;
+      <div
+        className={`main-content ${
+          isSidebarOpen ? "sidebar-open" : "sidebar-closed"
+        }`}
+      >
+        <Navbar toggleSidebar={() => setSidebarOpen(!isSidebarOpen)} />
+        
+      </div>
+    </div>
+  );
+}
